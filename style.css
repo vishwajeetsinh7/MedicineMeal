@@ -48,6 +48,10 @@
   .card-content { 
     padding: 2rem;
     text-align: center;
+    background-image: radial-gradient( rgba(255, 255, 255, 0.1) 1px, transparent 1px );
+    background-position: 50% 50%;
+    background-size: 1.1rem 1.1rem;
+    padding: 4rem;
     
   }
   .card-content h1 strong { 
@@ -98,3 +102,13 @@
     top: 25%;
     opacity: 1;
 }
+
+
+
+/* responsive design  */
+@media (max-width:756px) {
+  .card-content{ 
+    padding: 1.4rem;
+  }
+}
+
