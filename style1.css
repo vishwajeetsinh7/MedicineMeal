@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Sofia";
+    src: url("./assets/sofiapro-light.fc4151ac.otf");
+  }
+  
+  :root {
+    --primary-color: mediumslateblue;
+  }
+  
+  body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Sofia';
+    height: 100%;
+    max-height: 100vh;
+  }
+  
+  header {
+    height:15vh;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  header .logo img {
+    width: 100%;
+    max-width: 170px;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 650px;
+    background-color: white;
+    border: 1px solid #ff7104cf;
+    border-radius: 1.5rem;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+  }
+  
+  .card-content {
+    padding: 2rem;
+    text-align: center;
+    background-image: radial-gradient( rgba(0, 0, 0, 0.1) 1px, transparent 1px );
+    background-image: radial-gradient( rgb(204 113 3 / 42%) 1px, transparent 1px );
+    background-position: 50% 50%;
+    background-size: 1.1rem 1.1rem;
+    padding: 4rem;
+  }
+  
+  .card-content h1 strong {
+    color: #ff5c5c;
+  }
+  
+  .card-content h1 span {
+    color: red;
+  }
+  
+  .card-content h3 {
+    color: var(--primary-color);
+  }
+  
+  /* hb form */
+  label span {
+    color: black !important;
+  }
+  
+  .action {
+    text-align: center !important;
+  }
+  
+  /* card style */
+  .card::after {
+    content: '';
+    height: 70px;
+    width: 3px;
+    position: absolute;
+    left: -1px;
+    top: 65%;
+    background: linear-gradient(transparent, var(--primary-color), transparent);
+    opacity: 0;
+    transition: top, opacity;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+  }
+  
+  .card:hover::after {
+    top: 25%;
+    opacity: 1;
+  }
+  
+  /* responsive design */
+  @media (max-width: 756px) {
+    body {
+      height: 100%;
+      max-width: 100vw;
+    }
+  
+    header .logo img {
+      max-width: 200px;
+    }
+  
+    .card {
+      margin-top: 50px;
+    }
+  
+    .card-content {
+      padding: 1.4rem;
+    }
+  }
+  
