@@ -112,3 +112,11 @@
     }
   }
   
+  .telegram_link a { 
+    text-decoration: none;
+  }
+  .telegram_link a p { 
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
